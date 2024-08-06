@@ -36,12 +36,14 @@ int main() {
     printf(" %d %d %d \n %d %d %d \n %d %d %d \n\n ",c[0][0],c[0][1],c[0][2],c[1][0],c[1][1],c[1][2],c[2][0],c[2][1],c[2][2]);
     
 
-    // Task 3 :- Multiplication
+   // Task 3 :- Multiplication
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
-           c[i][j]=a[i][j]*b[i][j];
+            for(int x=0;x<3;x++){
+                c[i][j]+=a[i][x]*b[x][j];
+            }
+        }
        }
-    }
     printf(" %d %d %d \n %d %d %d \n %d %d %d \n\n ",c[0][0],c[0][1],c[0][2],c[1][0],c[1][1],c[1][2],c[2][0],c[2][1],c[2][2]);
     
 
